@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="ادخل وزنك"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblW"
+        android:textColor="#000"
+        android:inputType="number"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lblH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edW"
+        android:layout_alignParentRight="true"
+        android:text="ادخل طولك"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblH"
+        android:textColor="#000"
+        android:inputType="number"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edH"
+        android:onClick="Action"
+        android:layout_centerHorizontal="true"
+        android:text="احسب" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn"
+        android:textColor="#F00"
+        android:id="@+id/rsult"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
